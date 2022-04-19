@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<!--     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Camera-Plugin-Example</title>
+</head>
+
+<body>   
+<h1>Sign-up</h1>
+<div class="main">	
+	<div class="imgcontainer">
+		<img src="img/avatar_male.png" alt="Avatar" class="avatar" id="image">
+		<br>
+		<button id="btn">Take picture</button>
+		<br>
+		<button id="btn2">Upload picture</button>
+	</div>
+	<form>		
+		<div class="container">
+			<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" id = "uname" autocomplete="off" required>
+			<label for="uname"><b>Email</b></label>
+				<input type="email" placeholder="Enter Email" name="email" id = "email" autocomplete="off" required>
+			<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" id = "psw" autocomplete="off" required>
+			<label for="psw"><b>Confirm Password</b></label>
+				<input type="password" placeholder="Confirm Password" name="cpsw" id = "cpsw" autocomplete="off" required>	
+			<button id = "Sign-up" type="submit" onclick="connect()">Create Account</button>
+		</div>		   
+	</form>
+</div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

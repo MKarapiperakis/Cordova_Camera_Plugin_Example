@@ -1,0 +1,112 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(to bottom, #A7A7A7 0%, #2b222f 51%);
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size:12px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+.container {
+  padding: 16px;
+}
+
+h1 {
+    font-size:42px;
+    font-weight:normal;
+    margin:0px 0px 0px 20px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+	color: white;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.main
+{
+	border: 2px solid #f1f1f1;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 50%;
+	border-radius: 40px;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.imgcontainer button {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  display: inline;
+  border-radius: 15px;
+}
+
+img.avatar {
+  min-width: 100px;
+  max-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  border-radius: 30px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px inset #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+label
+{
+	color: white;
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (max-aspect-ratio: 1/1) and (max-width:500px) {
+    
+	.main
+	{
+		width: 80%;
+	}
+
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-image:linear-gradient(to bottom, #585858 0%, #1B1B1B 51%);
+    }
+}
